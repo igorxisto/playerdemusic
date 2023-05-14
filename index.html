@@ -14,7 +14,9 @@
     <title>projeto player spotify</title>
 </head>
 
-<body>
+<body> 
+    
+
     <img src="/img/1.png" alt="">
     <div class="descrição">
         <h2>Nome da música</h2>
@@ -38,30 +40,22 @@
         <i class="fas fa-pause-circle botao-pause"></i>
         <i class="fas fa-forward setas proxima"></i>
     </div>
-    <div class="volume">
+
+     <div class="volume">
         
-        <i class="fas fa-volume-off diminuir">-</i>
+        <!-- <i class="fas fa-volume-off diminuir">-</i>
+        <i class="fas fa-volume-off aumentar">+</i> -->
+    </div> 
 
-        <i class="fas fa-volume-off aumentar">+</i>
-        
-
-
-    </div>
     </br>
-    
-     <progress class="barradevolume" id='volumeaudio' value="" min="0" max="100"></progress> 
-    
-
-    <!-- <div class="barra">
-            
-    <div id='pontovolume' class="ponto"></div>  
-    <div>  -->
-
+    <progress class="barradevolume" id='volumeaudio' value="" min="0" max="100"/></progress>  
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1" />
 
     <audio src="musicas/"></audio>
 
     <script src="https://kit.fontawesome.com/5a828645a6.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="scriptv1.js"></script>
+    
 </body>
 
 </html>

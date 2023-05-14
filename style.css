@@ -11,6 +11,25 @@ html {
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
 }
+.search{
+   
+    float: left;
+    flex-wrap: nowrap;
+    
+}
+#search{
+    border-radius: 2em 2em;
+    border-color: #1db9549c ;
+    color:  white;
+    background-color: #333;
+    
+    
+    margin: 2rem;
+    text-align: center;
+    text-decoration: none;
+    float: left;
+    
+}
 
 img {
     width: 200px;
@@ -75,6 +94,8 @@ progress {
     align-items: center;
 }
 
+
+
 progress {
     height: 6px;
     width: 0;
@@ -133,4 +154,3 @@ div .botao-play,
     
 } */
 
-@media screen and (max-width:768px) {}
