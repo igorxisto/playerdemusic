@@ -79,6 +79,8 @@ async function aumentarVolume() {
 }
 
 
+
+
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 let musicas = [{
  
@@ -191,13 +193,6 @@ volumeSlider.addEventListener('input', function() {
     musica.volume = volumeSlider.value;
 });
 
-
-
-// document.querySelector('.diminuir').onclick = diminuirVolume;
-
-// document.querySelector('.aumentar').onclick = aumentarVolume;
-
-// document.querySelector('.diminuir').onclick = diminuirVolume;
 
 
 

@@ -17,19 +17,7 @@ html {
     flex-wrap: nowrap;
     
 }
-#search{
-    border-radius: 2em 2em;
-    border-color: #1db9549c ;
-    color:  white;
-    background-color: #333;
-    
-    
-    margin: 2rem;
-    text-align: center;
-    text-decoration: none;
-    float: left;
-    
-}
+
 
 img {
     width: 200px;
@@ -47,26 +35,27 @@ h2 {
 .duração {
     width: 300px;
     margin-top: 25px;
+    font-size: 10px;
 }
 
 .barra {
     width: 300px;
-    height: 6px;
-    border: 1px solid #eee;
-    border-radius: 5px;
+    height: 0.5px;
+    border: 0.5px solid  #eee;
+    border-radius: 50%;
     display: flex;
     align-items: center;
 }
 
 progress {
-    height: 6px;
+    height: 1px;
     width: 0;
     background-color: #333;
 }
 
 .ponto {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background-color: #eee;
     border-radius: 50%;
     margin-left: -10px;
@@ -83,74 +72,72 @@ progress {
 .volume {
     width: 300px;
     margin-top: 25px;
-}
-
-.barravolume {
-    width: 300px;
-    height: 6px;
-    border: 1px solid #eee;
-    border-radius: 5px;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
-
-
-progress {
-    height: 6px;
-    width: 0;
-    background-color: #333;
-}
-
-.pontovolume {
-    width: 20px;
-    height: 20px;
-    background-color: #eee;
-    border-radius: 50%;
-    margin-left: -10px;
-
-}
-
-.rotulovolume {
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-}
 
 /*volume*/
 .player {
-    width: 300px;
+    width: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items:center;
 }
 
 div .botao-pause {
     display: none;
+   
 
 }
 
 div .botao-play,
 .botao-pause {
-    font-size: 50px;
+    font-size: 35px;
     cursor: pointer;
     color: #eee;
 }
 
 .setas {
-    font-size: 40px;
+    font-size: 15px;
     cursor: pointer;
     color: #eee;
 }
 
-.volume {
-    display: flex;
-    justify-content: space-evenly;
-    letter-spacing: 0.5em;
+.slider {
+    
+    background: #eee;
+    outline: none;
+    width: 50%;
+    height: 2px;
+    border-radius: 9px; 
+    /* writing-mode: bt-lr; Define a escrita da base para o topo */
+    /* transform: rotate(-90deg); Gira o elemento em sentido anti-horário */
+    
     
 }
-/* .barradevolume{
-    width: 10em;
-    
-    
-} */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+
+    background: #333;
+    cursor: pointer;
+
+}
+
+.slider::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+
+    background: #333;
+    cursor: pointer;
+}
+
+
+
+
 
